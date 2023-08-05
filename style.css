@@ -46,14 +46,6 @@ body{
     border-radius: 4px;
   }
   
-  /* #addCity, #fetchWeather {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  } */
   
   .weather-cards {
     background: url(layered-peaks-haikei.svg) center center no-repeat;
@@ -84,15 +76,15 @@ body{
     }
   
     #addCity{
-      padding: 15px 30px;
+    padding: 15px 30px;
     border: none;
     border-radius: 10px;
     background: rgba(74, 57, 127, 0.7);
     color: white;
     font-size: 16px;
+    margin-top: 10px;
     }
      #fetchWeather {
       margin-top: 10px;
     }
   }
-  
