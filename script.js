@@ -20,11 +20,11 @@ fetchWeatherButton.addEventListener('click', () => {
   
   async function fetchWeatherData(cityName) {
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=0a1221d6e72aa1d14b83834e032f853c&units=metric`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`);
       const data = await response.json();
       createWeatherCard(data);
     } catch (error) {
-      console.error(`Error fetching weather for London: Network not ok`);
+      console.error(`Error fetching weather for ${cityName}: Network not ok`);
     }
   }
 
